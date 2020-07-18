@@ -3,4 +3,5 @@ kind: Deployment
 metadata:
   name: stock-web
   namespace: stock
- 
+  labels:
+    app: stock-we
