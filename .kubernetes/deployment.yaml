@@ -7,4 +7,5 @@ metadata:
     app: stock-web
 spec:
   replicas: 1
-  sel
+  selector:
+    matchLabels:
