@@ -4,4 +4,7 @@ metadata:
   name: stock-web
   namespace: stock
   labels:
-    app: stock-we
+    app: stock-web
+spec:
+  replicas: 1
+  sel
