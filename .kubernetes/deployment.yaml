@@ -10,4 +10,6 @@ spec:
   selector:
     matchLabels:
       app: stock-web
-  template
+  template:
+    metadata:
+      
