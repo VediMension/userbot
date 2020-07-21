@@ -13,4 +13,6 @@ spec:
   template:
     metadata:
       labels:
-        app: stock-we
+        app: stock-web
+    spec:
+      container
