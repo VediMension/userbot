@@ -15,4 +15,6 @@ spec:
       labels:
         app: stock-web
     spec:
-      container
+      containers:
+      - name: stock-web
+       
