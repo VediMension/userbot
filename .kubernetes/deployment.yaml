@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: stock-web
-        image: cnjackhack/stock_web:{{comm
+        image: cnjackhack/stock_web:{{commit_branch}}_{{substr commit_sha 
