@@ -17,4 +17,5 @@ spec:
     spec:
       containers:
       - name: stock-web
-        image: cnjackhack/stock_web:{{commit_branch}}_{{substr commit_sha 
+        image: cnjackhack/stock_web:{{commit_branch}}_{{substr commit_sha 0 8}}
+        imagePullPolicy: Always
