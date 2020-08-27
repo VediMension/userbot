@@ -1,3 +1,5 @@
 <template>
   <div id="app">
-    <router-vi
+    <router-view></router-view>
+  </div>
+</tem
