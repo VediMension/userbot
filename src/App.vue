@@ -2,4 +2,8 @@
   <div id="app">
     <router-view></router-view>
   </div>
-</tem
+</template>
+
+<script>
+  export default {}
+</scri
