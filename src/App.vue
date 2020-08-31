@@ -6,4 +6,6 @@
 
 <script>
   export default {}
-</scri
+</script>
+
+<style lang="scs
