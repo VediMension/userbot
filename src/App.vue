@@ -9,4 +9,5 @@
 </script>
 
 <style lang="scss">
-  @import './asse
+  @import './assets/scss/app';
+</style>
