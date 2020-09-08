@@ -1,3 +1,28 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    user-select: none;
+}
+
+html {
+    padding: 10px;
+}
+
+body {
+    font-family: PingFang SC, 'Source Sans Pro', sans-serif;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+// 选择
+$--scroll-bar-color: #333;
+::selection {
+    background: #ddd;
+    color: $--scroll-bar-color;
+}
+
+::-webkit-selection {
+    background: #ddd;
