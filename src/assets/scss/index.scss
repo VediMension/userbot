@@ -73,3 +73,38 @@ $--gain-less-color: #2CB532; // 绿色
             font-size: 13px;
             box-sizing: border-box;
             padding: 8px 5px;
+            background-color: #aaa;
+            border-radius: 2px;
+            transition: all .1s linear;
+
+            &.gain-more {
+                background-color: $--gain-more-color;
+
+                &:hover {
+                    background-color: darken($--gain-more-color, 5%);
+                }
+            }
+
+            &.gain-less {
+                background-color: $--gain-less-color;
+
+                &:hover {
+                    background-color: darken($--gain-less-color, 5%);
+                }
+            }
+
+
+            > .upper-info {
+                align-items: baseline;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+
+                > h3 {
+                    font-size: 13px;
+                    font-style: normal;
+                }
+
+
+                > p {
+                    font-size: 16px;
