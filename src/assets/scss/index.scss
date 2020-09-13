@@ -18,3 +18,33 @@ $--gain-less-color: #2CB532; // 绿色
 
         > h1 {
             padding: 0 12px;
+            font-size: 14px;
+            line-height: $--header-height;
+        }
+
+        > .action-buttons {
+            display: flex;
+            align-items: center;
+            padding-right: 5px;
+            -webkit-app-region: no-drag; // 按钮不可拖拽
+
+
+            > a {
+                display: block;
+                height: 14px;
+                line-height: 14px;
+                width: 30px;
+                text-align: center;
+                cursor: pointer;
+                color: #888;
+
+                > i {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: #000;
+                }
+
+                &.button-min {
+                    margin-left: 8px;
