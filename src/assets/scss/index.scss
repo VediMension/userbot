@@ -144,3 +144,33 @@ $--gain-less-color: #2CB532; // 绿色
                     line-height: 14px;
                     color: #000;
                     height: 14px;
+                    max-width: 70px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                > span {
+                    display: block;
+                    margin-left: 3px;
+                    padding: 0 2px;
+                    background-color: #aaa;
+                    border-radius: 2px;
+                    line-height: 14px;
+                    font-size: 11px;
+                    color: #fff;
+                }
+
+            }
+
+
+            > p {
+                font-size: 11px;
+                line-height: 11px;
+                color: #aaa;
+            }
+        }
+
+        .stock-price {
+            font-weight: bold;
+        }
