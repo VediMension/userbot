@@ -108,3 +108,39 @@ $--gain-less-color: #2CB532; // 绿色
 
                 > p {
                     font-size: 16px;
+                }
+            }
+
+            > .index-gain {
+                display: flex;
+                justify-content: space-between;
+                font-size: 11px;
+                color: #fff;
+            }
+        }
+    }
+
+    .optional-stock-table {
+        overflow: hidden;
+
+        &:before {
+            display: none !important;
+        }
+
+        .caret-wrapper {
+            width: 18px !important;
+        }
+
+        .stock-info {
+            > div {
+                display: flex;
+                align-items: center;
+                padding-top: 4px;
+                margin-bottom: 5px;
+
+                > h3 {
+                    display: inline-block;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #000;
+                    height: 14px;
