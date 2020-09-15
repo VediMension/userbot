@@ -174,3 +174,36 @@ $--gain-less-color: #2CB532; // 绿色
         .stock-price {
             font-weight: bold;
         }
+
+        .stock-volume {
+            font-weight: bold;
+        }
+
+        .gain-price {
+            color: #888;
+            font-weight: bold;
+
+            &.gain-more {
+                color: $--gain-more-color;
+            }
+
+            &.gain-less {
+                color: $--gain-less-color;
+            }
+        }
+
+        .gain-percent {
+            display: inline-block;
+            padding: 0 5px;
+            width: 65px;
+            color: #fff;
+            text-align: right;
+            font-weight: bold;
+            border-radius: 2px;
+            background-color: #ccc;
+
+            &.gain-more {
+                background-color: $--gain-more-color;
+            }
+
+            &.gain-less {
