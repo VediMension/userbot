@@ -207,3 +207,30 @@ $--gain-less-color: #2CB532; // 绿色
             }
 
             &.gain-less {
+                background-color: $--gain-less-color;
+            }
+        }
+    }
+}
+
+
+// element's dialog rewrite
+.el-dialog__wrapper {
+    top: 50px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+
+    > .el-dialog {
+        margin-top: 0 !important;
+        width: 400px !important;
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+}
+
+.v-modal {
+    top: 50px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
