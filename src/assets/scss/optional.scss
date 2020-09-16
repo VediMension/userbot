@@ -63,3 +63,27 @@
         text-align: center;
         font-size: 13px;
     }
+
+    .hint-letter {
+        text-align: right;
+        width: 90px;
+        font-size: 13px;
+        color: #aaa;
+    }
+}
+
+// 魔改下拉组件
+.el-select-dropdown {
+    border-radius: 0px;
+    box-shadow: none;
+    border-left: 0;
+    border-right: 0;
+
+    &.el-popper[x-placement^=bottom] {
+        margin-top: -1px !important;
+    }
+
+    .popper__arrow {
+        display: none !important;
+    }
+}

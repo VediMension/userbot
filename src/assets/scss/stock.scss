@@ -1,0 +1,16 @@
+
+$--gain-more-color: #F94848; // 红色
+$--gain-less-color: #2CB532; // 绿色
+.stock-window {
+    width: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    >.window-content {
+        >.stock-top {
+            display: flex;
+            align-items: start;
+            padding: 15px 10px 0 15px;
+            -webkit-app-region: drag;
+            >.stock-name {
