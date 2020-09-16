@@ -27,3 +27,39 @@
         }
     }
 
+
+}
+
+.hint-option-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .hint-market {
+        display: block;
+        padding: 0 4px;
+        border-radius: 1px;
+        background-color: #ccc;
+        color: #fff;
+        line-height: 14px;
+        height: 14px;
+        text-align: center;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    .hint-name {
+        width: 110px;
+        height: 14px;
+        line-height: 14px;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+    }
+
+    .hint-code {
+        width: 60px;
+        text-align: center;
+        font-size: 13px;
+    }
