@@ -117,3 +117,39 @@ $--gain-less-color: #2CB532; // 绿色
                     >span {
                         display: inline-block;
                         height: 20px;
+                        font-size: 13px !important;
+                        line-height: $form-item-height !important;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        >.k-line {
+            margin-top: 15px;
+            border-top: 1px solid #eee;
+            width: 100%;
+            >.line-picture {
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                text-align: center;
+            }
+            >.order-list {
+                border-left: 1px solid #eee;
+                display: flex;
+                >.inner-title {
+                    text-align: center;
+                    font-size: 12px;
+                    background-color: #fafafa;
+                    border-bottom: 1px solid #eaeaea;
+                }
+                $list-line-height: 18px;
+                >ul.sell-order,
+                >ul.buy-order {
+                    padding: 2px 8px;
+                    list-style: none;
+                    border-bottom: 1px solid #eaeaea;
+                    >li {
+                        font-size: 11px;
+                        line-height: $list-line-height;
+                        width: 120px;
