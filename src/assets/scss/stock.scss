@@ -80,3 +80,40 @@ $--gain-less-color: #2CB532; // 绿色
                     color: $--gain-more-color;
                 }
                 &.gain-less {
+                    color: $--gain-less-color;
+                }
+            }
+            >.right-part {
+                font-size: 12px;
+                color: #aaa;
+            }
+        }
+        >.stock-info-form {
+            padding: 0 15px;
+            overflow: hidden;
+            .el-form-item {
+                $form-item-height: 21px;
+                margin-right: 0;
+                margin-bottom: 0;
+                height: $form-item-height;
+                display: flex;
+                float: left;
+                width: 25%;
+                &.gain-more {
+                    color: $--gain-more-color;
+                }
+                &.gain-less {
+                    color: $--gain-less-color;
+                }
+                >label {
+                    width: 50px;
+                    font-size: 13px !important;
+                    padding-right: 5px;
+                    line-height: $form-item-height;
+                    color: #333;
+                }
+                >.el-form-item__content {
+                    line-height: $form-item-height !important;
+                    >span {
+                        display: inline-block;
+                        height: 20px;
