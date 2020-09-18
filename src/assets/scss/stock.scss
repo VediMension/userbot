@@ -50,3 +50,33 @@ $--gain-less-color: #2CB532; // 绿色
                         border-left: 1px solid #e0e0e0;
                     }
                     &.button-close {
+                        &:hover {
+                            color: #F84B4B;
+                        }
+                    }
+                }
+            }
+        }
+        >.price-row {
+            padding: 10px 15px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            >.left-part {
+                display: flex;
+                align-items: baseline;
+                color: #555;
+                >.current-price {
+                    font-size: 30px;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                }
+                >.gain-price,
+                >.gain-percent {
+                    margin-left: 10px;
+                    font-size: 14px;
+                }
+                &.gain-more {
+                    color: $--gain-more-color;
+                }
+                &.gain-less {
