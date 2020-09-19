@@ -153,3 +153,35 @@ $--gain-less-color: #2CB532; // 绿色
                         font-size: 11px;
                         line-height: $list-line-height;
                         width: 120px;
+                        display: flex;
+                        >span {
+                            display: inline-block;
+                        }
+                        >.order-index {
+                            width: 30px;
+                        }
+                        >.order-price {
+                            width: 60px;
+                            text-align: center;
+                            color: #888;
+                            &.gain-more {
+                                color: $--gain-more-color;
+                            }
+                            &.gain-less {
+                                color: $--gain-less-color;
+                            }
+                        }
+                        >.order-count {
+                            width: 60px;
+                            text-align: right;
+                        }
+                    }
+                }
+                >ul.deal-detail {
+                    padding: 3px 8px;
+                    list-style: none;
+                    >li {
+                        font-size: 11px;
+                        line-height: $list-line-height;
+                        width: 120px;
+                        display: flex;
