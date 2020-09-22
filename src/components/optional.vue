@@ -60,3 +60,37 @@ export default {
         this.$refs["codeSelect"].blur();
       } else {
         setTimeout(() => {
+          this.code = key;
+          this.hints = [];
+          this.$refs["codeSelect"].focus();
+        }, 1);
+      }
+    },
+    /**
+     * element-ui 下拉远程获取自选股关键字提示方法
+     */
+    fetchHint(query) {
+      apis.searchStock(query).then((data) => {
+        console.log(data);
+        data.list.forEach((item, index) => {
+          this.$set(this.hints, index, item);
+        })
+      })
+    },
+    /**
+     * 执行添加个股
+     * @param code {string} - 需要添加的个股代码
+     */
+    handleAction(internalCode) {
+      const storage = localStorage.getItem("optionals");
+      if (storage !== null && storage !== "") {
+        const splitCode = storage.split(","); // 获取存储的代码
+        // 判断是否存在
+        if (splitCode.indexOf(internalCode) > -1 || stockIndex.indexOf(internalCode) > -1) {
+          this.$toasted.show("已存在股票代码", {
+            theme: "toasted-primary",
+            position: "bottom-center",
+            duration: 2000,
+          });
+          this.refreshOptionals();
+        } else {
