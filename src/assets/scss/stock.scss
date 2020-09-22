@@ -221,3 +221,7 @@ $--gain-less-color: #2CB532; // 绿色
 // 修改加载中遮罩样式
 .el-loading-mask {
     margin: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    height: 535px;
+}
