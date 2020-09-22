@@ -185,3 +185,39 @@ $--gain-less-color: #2CB532; // 绿色
                         line-height: $list-line-height;
                         width: 120px;
                         display: flex;
+                        >span {
+                            display: inline-block;
+                        }
+                        >.deal-time {
+                            width: 40px;
+                        }
+                        >.deal-price {
+                            width: 60px;
+                            text-align: center;
+                            &.gain-more {
+                                color: $--gain-more-color;
+                            }
+                            &.gain-less {
+                                color: $--gain-less-color;
+                            }
+                        }
+                        >.deal-count {
+                            width: 40px;
+                            text-align: right;
+                            &.deal-buy {
+                                color: $--gain-more-color;
+                            }
+                            &.deal-sell {
+                                color: $--gain-less-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 修改加载中遮罩样式
+.el-loading-mask {
+    margin: 10px;
