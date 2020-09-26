@@ -94,3 +94,31 @@ export default {
           });
           this.refreshOptionals();
         } else {
+          localStorage.setItem("optionals", `${internalCode},${storage}`); // 非空的情况
+          this.$toasted.show("添加完成", {
+            theme: "toasted-primary",
+            position: "bottom-center",
+            duration: 2000,
+          });
+          this.refreshOptionals();
+        }
+      } else {
+        localStorage.setItem("optionals", internalCode); // 空的情况
+        this.$toasted.show("添加完成", {
+          theme: "toasted-primary",
+          position: "bottom-center",
+          duration: 2000,
+        });
+        this.refreshOptionals();
+      }
+    },
+    /**
+     * 重置下拉的所有提示选项
+     */
+    refreshOptionals() {
+      this.code = null;
+      this.isVisible = false;
+      this.hints = [];
+      this.$emit("finish");
+    },
+  },
