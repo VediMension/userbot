@@ -122,3 +122,8 @@ export default {
       this.$emit("finish");
     },
   },
+};
+</script>
+<style lang="scss">
+@import "../assets/scss/optional";
+</style>
