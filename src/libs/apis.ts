@@ -1,1 +1,3 @@
-import axios from "a
+import axios from "axios";
+
+const apiPrefix = 'https://stock.nigh
