@@ -6,4 +6,5 @@ export default {
     async searchStock(query: string) {
         try{
             const resp = await axios.get(apiPrefix + 'search', {
-      
+                params: {
+               
