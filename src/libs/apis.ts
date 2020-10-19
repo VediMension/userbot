@@ -7,4 +7,5 @@ export default {
         try{
             const resp = await axios.get(apiPrefix + 'search', {
                 params: {
-               
+                    key: query,
+           
