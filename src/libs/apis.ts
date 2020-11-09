@@ -16,4 +16,5 @@ export default {
             throw err;
         }
     },
-    async list
+    async listStocks(stocks: string[]) {
+ 
