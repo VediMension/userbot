@@ -18,4 +18,4 @@ export default {
     },
     async listStocks(stocks: string[]) {
         try{
-            const
+            const resp = await axios.get(
