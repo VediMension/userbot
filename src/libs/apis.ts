@@ -17,4 +17,5 @@ export default {
         }
     },
     async listStocks(stocks: string[]) {
- 
+        try{
+            const
