@@ -19,4 +19,5 @@ export default {
     async listStocks(stocks: string[]) {
         try{
             const resp = await axios.get(apiPrefix + 'multi_stock', {
-                pa
+                params: {
+                    co
