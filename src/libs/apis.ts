@@ -20,4 +20,6 @@ export default {
         try{
             const resp = await axios.get(apiPrefix + 'multi_stock', {
                 params: {
-                    co
+                    codes: stocks,
+                }
+     
