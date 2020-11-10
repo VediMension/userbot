@@ -22,4 +22,5 @@ export default {
                 params: {
                     codes: stocks,
                 }
-     
+            })
+            return resp.
