@@ -23,4 +23,6 @@ export default {
                     codes: stocks,
                 }
             })
-            return resp.
+            return resp.data;
+        } catch(err) {
+ 
