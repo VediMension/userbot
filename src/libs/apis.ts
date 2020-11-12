@@ -25,4 +25,6 @@ export default {
             })
             return resp.data;
         } catch(err) {
-            console.error(
+            console.error(err);
+            throw err;
+ 
