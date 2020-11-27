@@ -6,4 +6,6 @@ const stockIndex = ['1.000001', '0.399001', '0.399006'] // 三大指数
  * 比较两个金额大小并返回相应类名
  * @param value 被比较值
  * @param compare 比较值
- * @
+ * @returns {string} 类名
+ */
+co
