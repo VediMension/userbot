@@ -9,4 +9,4 @@ const stockIndex = ['1.000001', '0.399001', '0.399006'] // 三大指数
  * @returns {string} 类名
  */
 const comparePrice = (value: number, compare: number): string => {
-  return value > compare ? 'gain-more'
+  return value > compare ? 'gain-more' : (value < compare ? 'gai
