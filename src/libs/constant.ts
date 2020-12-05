@@ -15,4 +15,5 @@ const comparePrice = (value: number, compare: number): string => {
 /**
  * 将金额转为万为单位
  * @description 有万则加万字，没有则不显示万字
- * @param number {string|number} - 需要
+ * @param number {string|number} - 需要被转换的金额
+ * @return {string} 返回转换后
