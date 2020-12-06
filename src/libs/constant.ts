@@ -19,3 +19,4 @@ const comparePrice = (value: number, compare: number): string => {
  * @return {string} 返回转换后的金额字符串
  */
 const transVolume = (number: string): string => {
+  number = parseInt(number) + ''
