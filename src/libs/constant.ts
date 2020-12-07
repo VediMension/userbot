@@ -21,4 +21,4 @@ const comparePrice = (value: number, compare: number): string => {
 const transVolume = (number: string): string => {
   number = parseInt(number) + ''
   if (number.length > 4) {
-    
+    const integer = number.subs
