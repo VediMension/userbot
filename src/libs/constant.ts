@@ -22,4 +22,4 @@ const transVolume = (number: string): string => {
   number = parseInt(number) + ''
   if (number.length > 4) {
     const integer = number.substring(0, number.length - 4)
-    const decimal = integer.length > 
+    const decimal = integer.length > 3 ? '' : ('.' + number.substring
