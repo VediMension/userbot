@@ -25,4 +25,10 @@ const transVolume = (number: string): string => {
     const decimal = integer.length > 3 ? '' : ('.' + number.substring(number.length - 5, number.length - 3))
     return integer + decimal + '万'
   } else {
-    
+    return number
+  }
+}
+
+/**
+ * 转换日期时间字符串
+ * 
