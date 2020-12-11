@@ -23,4 +23,6 @@ const transVolume = (number: string): string => {
   if (number.length > 4) {
     const integer = number.substring(0, number.length - 4)
     const decimal = integer.length > 3 ? '' : ('.' + number.substring(number.length - 5, number.length - 3))
-    return integer + decima
+    return integer + decimal + '万'
+  } else {
+    
