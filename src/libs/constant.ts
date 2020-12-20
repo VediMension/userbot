@@ -34,4 +34,4 @@ const transVolume = (number: string): string => {
  * @param str {string} - 需要转换的时间字符串
  * @returns {string} - 转换后的时间字符串
  */
-c
+const transDate = (str: stri
