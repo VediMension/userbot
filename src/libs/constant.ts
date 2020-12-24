@@ -35,4 +35,5 @@ const transVolume = (number: string): string => {
  * @returns {string} - 转换后的时间字符串
  */
 const transDate = (str: string): string => {
-  const year
+  const year = str.substring(0, 4)
+ 
