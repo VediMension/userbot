@@ -37,4 +37,5 @@ const transVolume = (number: string): string => {
 const transDate = (str: string): string => {
   const year = str.substring(0, 4)
   const month = str.substring(4, 6)
-  const day = str
+  const day = str.substring(6, 8)
+  con
