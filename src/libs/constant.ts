@@ -38,4 +38,5 @@ const transDate = (str: string): string => {
   const year = str.substring(0, 4)
   const month = str.substring(4, 6)
   const day = str.substring(6, 8)
-  con
+  const hour = str.substring(8, 10)
+  c
