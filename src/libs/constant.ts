@@ -41,4 +41,7 @@ const transDate = (str: string): string => {
   const hour = str.substring(8, 10)
   const minute = str.substring(10, 12)
   const second = str.substring(12, 14)
-  return `${year}年${month}月${day}日 ${hour
+  return `${year}年${month}月${day}日 ${hour}:${minute}:${second}`
+}
+
+/**
