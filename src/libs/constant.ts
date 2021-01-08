@@ -45,3 +45,5 @@ const transDate = (str: string): string => {
 }
 
 /**
+ * 获取市场名称
+ * @param code {string
