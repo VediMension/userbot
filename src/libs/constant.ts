@@ -50,4 +50,5 @@ const transDate = (str: string): string => {
  * @returns {string} - 中文市场名称
  */
 const transMarketName = (code: string): string => {
-  
+  switch (code) {
+    case 's
