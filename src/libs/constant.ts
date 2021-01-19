@@ -53,4 +53,7 @@ const transMarketName = (code: string): string => {
   switch (code) {
     case 'sh':
       return '上证'
-    case 's
+    case 'sz':
+      return '深证'
+    case 'hk':
+  
