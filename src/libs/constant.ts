@@ -56,4 +56,5 @@ const transMarketName = (code: string): string => {
     case 'sz':
       return '深证'
     case 'hk':
-  
+      return '港股'
+    defaul
