@@ -62,3 +62,7 @@ const transMarketName = (code: string): string => {
   }
 }
 
+export {
+  apiUrl,
+  timeSpan,
+  stoc
