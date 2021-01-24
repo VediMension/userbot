@@ -67,4 +67,6 @@ export {
   timeSpan,
   stockIndex,
   comparePrice,
-  trans
+  transVolume,
+  transDate,
+  t
