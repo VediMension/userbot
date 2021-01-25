@@ -69,4 +69,5 @@ export {
   comparePrice,
   transVolume,
   transDate,
-  t
+  transMarketName
+}
