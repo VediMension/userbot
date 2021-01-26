@@ -20,3 +20,34 @@ function addTimeStr(time, num) {
     var mins_un = parseInt((mins + num) / 60);
     var hour_un = parseInt((Number(hour) + mins_un) / 24);
     if (mins_un > 0) {
+        if (hour_un > 0) {
+            var tmpVal = ((Number(hour) + mins_un) % 24) + "";
+            hour = tmpVal.length > 1 ? tmpVal : '0' + tmpVal; //判断是否是一位
+        } else {
+            var tmpVal = Number(hour) + mins_un + "";
+            hour = tmpVal.length > 1 ? tmpVal : '0' + tmpVal;
+        }
+        var tmpMinsVal = ((mins + num) % 60) + "";
+        mins = tmpMinsVal.length > 1 ? tmpMinsVal : 0 + tmpMinsVal; //分钟数为 取余60的数
+    } else {
+        var tmpMinsVal = mins + num + "";
+        mins = tmpMinsVal.length > 1 ? tmpMinsVal : '0' + tmpMinsVal; //不大于整除60
+    }
+    return hour + ":" + mins;
+}
+
+//获取增加指定分钟数的 数组  如 09:30增加2分钟  结果为 ['09:31','09:32'] 
+function getNextTime(startTime, endTIme, offset, resultArr) {
+    var result = addTimeStr(startTime, offset);
+    resultArr.push(result);
+    if (result == endTIme) {
+        return resultArr;
+    } else {
+        return getNextTime(result, endTIme, offset, resultArr);
+    }
+}
+
+
+/**
+ * 不同类型的股票的交易时间会不同  
+ * @param {Object} type   hs=沪深  us=美股  hk=港股
