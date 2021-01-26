@@ -51,3 +51,28 @@ function getNextTime(startTime, endTIme, offset, resultArr) {
 /**
  * 不同类型的股票的交易时间会不同  
  * @param {Object} type   hs=沪深  us=美股  hk=港股
+ */
+var time_arr = function(type) {
+    if (type.indexOf('us') != -1) { //生成美股时间段
+        var timeArr = new Array();
+        timeArr.push('09:30')
+        return getNextTime('09:30', '16:00', 1, timeArr);
+    }
+    if (type.indexOf('hs') != -1) { //生成沪深时间段
+        var timeArr = new Array();
+        timeArr.push('09:30');
+        timeArr.concat(getNextTime('09:30', '11:30', 1, timeArr));
+        timeArr.push('13:00');
+        timeArr.concat(getNextTime('13:00', '15:00', 1, timeArr));
+        return timeArr;
+    }
+    if (type.indexOf('hk') != -1) { //生成港股时间段
+        var timeArr = new Array();
+        timeArr.push('09:30');
+        timeArr.concat(getNextTime('09:30', '11:59', 1, timeArr));
+        timeArr.push('13:00');
+        timeArr.concat(getNextTime('13:00', '16:00', 1, timeArr));
+        return timeArr;
+    }
+
+}
