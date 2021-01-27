@@ -76,3 +76,41 @@ var time_arr = function(type) {
     }
 
 }
+
+
+var get_m_data = function(m_data, type) {
+    var priceArr = new Array();
+    var vol = new Array();
+    var times = time_arr(type);
+    $.each(m_data.data, function(i, v) {
+        priceArr.push(v[1]);
+        vol.push(v[2]); //目前数据没有均价，取值提前一位
+    })
+    return {
+        priceArr: priceArr,
+        vol: vol,
+        times: times
+    }
+}
+
+
+//分时图 option
+
+/**
+ * 生成分时option 
+ * @param {Object} m_data 分时数据
+ * @param {Object} type 股票类型  us-美股  hs-沪深  hk-港股
+ */
+
+function initMOption(m_data, type) {
+    var m_datas = get_m_data(m_data, type);
+
+    var baseNumber = Number(m_data.yestclose).toFixed(2)
+    var _minVal = Number(baseNumber - baseNumber * handle_num()).toFixed(2);
+    var _maxVal = (Number(baseNumber) + baseNumber * handle_num()).toFixed(2);
+    var _interval = Math.abs(Number((baseNumber - _minVal) / 5));
+
+    function handle_num() {
+        var _aa = Math.abs((Math.max.apply(null, m_datas.priceArr) - baseNumber) / baseNumber).toFixed(2);
+        var _bb = Math.abs((baseNumber - Math.min.apply(null, m_datas.priceArr)) / baseNumber).toFixed(2);
+        return _aa > _bb ? _aa : _bb;
