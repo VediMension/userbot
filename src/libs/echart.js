@@ -114,3 +114,34 @@ function initMOption(m_data, type) {
         var _aa = Math.abs((Math.max.apply(null, m_datas.priceArr) - baseNumber) / baseNumber).toFixed(2);
         var _bb = Math.abs((baseNumber - Math.min.apply(null, m_datas.priceArr)) / baseNumber).toFixed(2);
         return _aa > _bb ? _aa : _bb;
+    }
+
+    function format_y(v) {
+        v = v.toFixed(2)
+        if (v > m_data.yestclose) {
+            return '{red|' + v + '}';
+        } else if (v == baseNumber) {
+            return v;
+        } else {
+            return '{green|' + v + '}';
+        }
+    }
+
+    function more_val(val, l) {
+        out = []
+        for (i = 0; i < l; i++) {
+            out.push(val)
+        }
+        return out
+    }
+    return {
+        tooltip: { //弹框指示器
+            trigger: 'axis',
+            backgroundColor: "#f1f1f1",
+            borderColor: "#ccc",
+            borderWidth: 1,
+            textStyle: {
+                color: '#333'
+            },
+            axisPointer: {
+                type: 'cross',
