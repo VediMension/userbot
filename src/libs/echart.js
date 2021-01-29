@@ -177,3 +177,40 @@ function initMOption(m_data, type) {
                 fontSize: 12,
                 color: labelColor
             }
+        },
+        color: [ma5Color, ma10Color],
+        grid: [{
+            show: true,
+            borderColor: borderColor,
+            id: 'gd1',
+            height: '63%', //主K线的高度,
+            top: '9%'
+        }, {
+            show: true,
+            borderColor: borderColor,
+            id: 'gd2',
+            height: '63%', //主K线的高度,
+            top: '9%'
+        }, {
+            show: true,
+            borderColor: borderColor,
+            id: 'gd3',
+            top: '76%',
+            height: '19%' //交易量图的高度
+        }],
+        xAxis: [ //==== x轴
+            { //主图 
+                gridIndex: 0,
+                boundaryGap: false,
+                axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                },
+                data: m_datas.times,
+                axisLabel: { //label文字设置
+                    show: false
+                },
