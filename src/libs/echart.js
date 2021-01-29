@@ -145,3 +145,35 @@ function initMOption(m_data, type) {
             },
             axisPointer: {
                 type: 'cross',
+                label: {
+                    show: true,
+                    backgroundColor: '#333'
+                }
+            },
+            formatter: function(params, ticket, callback) {
+                var i = params[0].dataIndex;
+                var color;
+                if (m_datas.priceArr[i] > m_data.yestclose) {
+                    color = 'style="color:' + upColor + '"';
+                } else {
+                    color = 'style="color:' + downColor + '"';
+                }
+                var html = '<div class="commColor" style="width:100px;">\
+                  <div>当前价 <span  ' + color + ' >' + m_datas.priceArr[i] + '</span></div>\
+			            <div>涨幅 <span  ' + color + ' >' + ratioCalculate(m_datas.priceArr[i], m_data.yestclose) + '%</span></div>\
+				          <div>成交量 <span  ' + color + ' >' + m_datas.vol[i] + '</span></div></div>';
+                return html;
+            }
+        },
+        legend: { //图例控件,点击图例控制哪些系列不显示
+            icon: 'rect',
+            type: 'scroll',
+            itemWidth: 14,
+            itemHeight: 2,
+            selectedMode: false,
+            left: 0,
+            top: '1%',
+            textStyle: {
+                fontSize: 12,
+                color: labelColor
+            }
