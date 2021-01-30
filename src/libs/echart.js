@@ -253,3 +253,38 @@ function initMOption(m_data, type) {
                         type: 'dashed'
                     }
                 },
+                axisLine: {
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                }
+            }
+        ],
+        yAxis: [ //y轴
+            {
+                type: 'value',
+                min: _minVal,
+                max: _maxVal,
+                interval: _interval,
+                gridIndex: 0,
+                scale: true,
+                axisTick: { // 分割线 短
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                },
+                axisPointer: {
+                    show: true,
+                    label: {
+                        formatter: function(params) {
+                            return (params.value).toFixed(2);
+                        }
+                    }
+                },
+                axisLabel: {
+                    color: '#333',
+                    formatter: format_y,
+                    rich: {
