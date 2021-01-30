@@ -214,3 +214,42 @@ function initMOption(m_data, type) {
                 axisLabel: { //label文字设置
                     show: false
                 },
+                splitLine: { //分割线设置
+                    show: true,
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                },
+            },
+            {
+                show: false,
+                gridIndex: 1,
+                boundaryGap: false,
+                data: m_datas.times,
+                axisLabel: { //label文字设置
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                },
+            }, { //交易量图
+                splitNumber: 2,
+                type: 'category',
+                gridIndex: 2,
+                boundaryGap: false,
+                data: m_datas.times,
+                axisLabel: { //label文字设置
+                    color: labelColor,
+                    fontSize: 10
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: { //分割线设置
+                    show: true,
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                },
