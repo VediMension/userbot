@@ -314,3 +314,33 @@ function initMOption(m_data, type) {
                 position: 'right',
                 z: 4,
                 axisTick: {
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                },
+                axisLabel: { //label文字设置
+                    color: function(val) {
+                        val = Number(val).toFixed(2)
+                        if (val == baseNumber) {
+                            return '#333'
+                        }
+                        return val > baseNumber ? upColor : downColor;
+                    },
+                    inside: false, //label文字朝内对齐 
+                    formatter: function(val) {
+                        var resul = ratioCalculate(val, baseNumber);
+                        return Number(resul).toFixed(2) + '%'
+                    }
+                },
+                splitLine: { //分割线设置
+                    show: false,
+                    lineStyle: {
+                        color: '#181a23'
+                    }
+                },
+                axisPointer: {
+                    show: true,
+                    label: {
