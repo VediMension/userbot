@@ -288,3 +288,29 @@ function initMOption(m_data, type) {
                     color: '#333',
                     formatter: format_y,
                     rich: {
+                        red: {
+                            color: 'red',
+                            lineHeight: 10
+                        },
+                        green: {
+                            color: 'green',
+                            lineHeight: 10
+                        }
+                    }
+                },
+                z: 4,
+                splitLine: { //分割线设置
+                    show: true,
+                    lineStyle: {
+                        type: 'dashed'
+                    }
+                },
+            }, {
+                scale: true,
+                gridIndex: 1,
+                min: _minVal,
+                max: _maxVal,
+                interval: _interval,
+                position: 'right',
+                z: 4,
+                axisTick: {
