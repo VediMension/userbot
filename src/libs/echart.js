@@ -371,3 +371,25 @@ function initMOption(m_data, type) {
                     show: false,
                     label: {
                         formatter: function(params) { //计算右边Y轴对应的当前价的涨幅比例
+                            var _p = ((params.value) / 10000).toFixed(1) + '万';
+                            return _p
+                        }
+                    }
+                },
+                splitLine: { //分割线设置
+                    show: false,
+                },
+                axisLabel: { //label文字设置
+                    color: labelColor,
+                    inside: false, //label文字朝内对齐 
+                    fontSize: 10,
+                    onZero: false,
+                    formatter: function(params) { //计算右边Y轴对应的当前价的涨幅比例            
+                        var _p = (params / 10000).toFixed(1);
+                        if (params == 0) {
+                            _p = '(万)'
+                        }
+                        return _p
+                    }
+                },
+            }
