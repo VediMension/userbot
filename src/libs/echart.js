@@ -344,3 +344,30 @@ function initMOption(m_data, type) {
                 axisPointer: {
                     show: true,
                     label: {
+                        formatter: function(params) { //计算右边Y轴对应的当前价的涨幅比例
+                            return ratioCalculate(params.value, baseNumber) + '%';
+                        }
+                    }
+                }
+            }, { //交易图
+                // name: '万',
+                nameGap: '0',
+                nameTextStyle: {
+                    color: labelColor
+                },
+                gridIndex: 2,
+                z: 4,
+                splitNumber: 3,
+                axisLine: {
+                    onZero: false,
+                    lineStyle: {
+                        color: borderColor,
+                    }
+                },
+                axisTick: {
+                    show: false
+                },
+                axisPointer: {
+                    show: false,
+                    label: {
+                        formatter: function(params) { //计算右边Y轴对应的当前价的涨幅比例
