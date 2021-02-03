@@ -393,3 +393,27 @@ function initMOption(m_data, type) {
                     }
                 },
             }
+        ],
+        backgroundColor: bgColor,
+        blendMode: 'source-over',
+        series: [{
+                name: '当前价',
+                type: 'line',
+                data: m_datas.priceArr,
+                smooth: true,
+                symbol: "circle", //中时有小圆点 
+                lineStyle: {
+                    normal: {
+                        opacity: 0.8,
+                        color: '#39afe6',
+                        width: 1
+                    }
+                },
+                areaStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgba(0, 136, 212, 0.7)'
+                        }, {
+                            offset: 0.8,
+                            color: 'rgba(0, 136, 212, 0.02)'
