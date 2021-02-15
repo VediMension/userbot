@@ -417,3 +417,35 @@ function initMOption(m_data, type) {
                         }, {
                             offset: 0.8,
                             color: 'rgba(0, 136, 212, 0.02)'
+                        }], false),
+                        shadowColor: 'rgba(0, 0, 0, 0.1)',
+                        shadowBlur: 10
+                    }
+                },
+                markLine: {
+                    name: '昨日收盘价',
+                    symbol: ['none', 'none'],
+                    label: {
+                        show: false,
+                        formatter: Number(m_data.yestclose).toFixed(2),
+                        position: 'start',
+                    },
+                    lineStyle: {
+                        color: '#4289c5',
+                        type: 'solid'
+                    },
+                    data: [{
+                        yAxis: m_data.yestclose,
+                    }]
+                }
+            },
+            {
+                type: 'line',
+                data: m_datas.priceArr,
+                smooth: true,
+                symbol: "none",
+                gridIndex: 1,
+                xAxisIndex: 1,
+                yAxisIndex: 1,
+                lineStyle: { //标线的样式 
+                    normal: {
