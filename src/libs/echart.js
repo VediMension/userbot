@@ -449,3 +449,24 @@ function initMOption(m_data, type) {
                 yAxisIndex: 1,
                 lineStyle: { //标线的样式 
                     normal: {
+                        width: 0
+                    }
+                }
+            },
+            {
+                name: '成交量',
+                type: 'bar',
+                gridIndex: 2,
+                xAxisIndex: 2,
+                yAxisIndex: 2,
+                data: m_datas.vol,
+                barWidth: '60%',
+                itemStyle: {
+                    normal: {
+                        color: function(params) {
+                            var colorList;
+                            if (m_datas.priceArr[params.dataIndex] > m_datas.priceArr[params.dataIndex - 1]) {
+                                colorList = upColor;
+                            } else {
+                                colorList = downColor;
+                            }
