@@ -470,3 +470,31 @@ function initMOption(m_data, type) {
                             } else {
                                 colorList = downColor;
                             }
+                            return colorList;
+                        },
+                    }
+                }
+            },
+            {
+                name: 'CDP',
+                type: 'line',
+                data: more_val(18.19, m_datas.vol.length),
+                lineStyle: {
+                    opacity: 0.5,
+                    type: 'dotted'
+                }
+            },
+            {
+                name: 'AH',
+                type: 'line',
+                data: more_val(17.5, m_datas.vol.length),
+                smooth: true,
+                lineStyle: {
+                    opacity: 0.5
+                }
+            },
+            {
+                name: 'NH',
+                type: 'line',
+                data: more_val(17.4, m_datas.vol.length),
+                smooth: true,
