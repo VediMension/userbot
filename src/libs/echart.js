@@ -498,3 +498,35 @@ function initMOption(m_data, type) {
                 type: 'line',
                 data: more_val(17.4, m_datas.vol.length),
                 smooth: true,
+                lineStyle: {
+                    opacity: 0.5
+                }
+            },
+            {
+                name: 'AL',
+                type: 'line',
+                data: more_val(17.7, m_datas.vol.length),
+                smooth: true,
+                lineStyle: {
+                    opacity: 0.5
+                }
+            },
+            {
+                name: 'NL',
+                type: 'line',
+                data: more_val(17.3, m_datas.vol.length),
+                smooth: true,
+                lineStyle: {
+                    opacity: 0.5
+                }
+            }
+        ]
+    };
+}
+
+/**
+ * 计算价格涨跌幅百分比
+ * @param {Object} price 当前价
+ * @param {Object} yclose 昨收价
+ */
+function ratioCalculate(price, yclose) {
