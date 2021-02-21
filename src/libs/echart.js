@@ -530,3 +530,5 @@ function initMOption(m_data, type) {
  * @param {Object} yclose 昨收价
  */
 function ratioCalculate(price, yclose) {
+    return ((price - yclose) / yclose * 100).toFixed(2);
+}
