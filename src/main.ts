@@ -1,3 +1,4 @@
 import Vue from 'vue'
 import axios from 'axios'
-import Toasted from 'vue-toasted' // 底部提示
+import Toasted from 'vue-toasted' // 底部提示弹窗
+import {Table, TableColumn, Input, 
