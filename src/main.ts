@@ -5,4 +5,5 @@ import {Table, TableColumn, Input, Select, Option, Form, FormItem, Dialog, Butto
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
-import 
+import store from './store'
+import {comparePrice, tran
