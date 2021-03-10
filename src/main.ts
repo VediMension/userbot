@@ -8,4 +8,6 @@ import router from './router'
 import store from './store'
 import {comparePrice, transVolume, transDate, transMarketName} from './libs/constant' // 公共方法
 
-// ele
+// element-ui 按需引用
+Vue.use(Table)
+Vue.use(T
