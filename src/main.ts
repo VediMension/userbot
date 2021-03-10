@@ -6,4 +6,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import {comparePrice, transVolume, transDate, transMarketN
+import {comparePrice, transVolume, transDate, transMarketName} from './libs/constant' // 公共方法
+
+// ele
