@@ -10,4 +10,6 @@ import {comparePrice, transVolume, transDate, transMarketName} from './libs/cons
 
 // element-ui 按需引用
 Vue.use(Table)
-Vue.use(T
+Vue.use(TableColumn)
+Vue.use(Input)
+Vue.use(S
