@@ -12,4 +12,5 @@ import {comparePrice, transVolume, transDate, transMarketName} from './libs/cons
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Input)
-Vue.use(S
+Vue.use(Select)
+Vue.use(Opt
