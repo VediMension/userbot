@@ -13,4 +13,6 @@ Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Input)
 Vue.use(Select)
-Vue.use(Opt
+Vue.use(Option)
+Vue.use(Form)
+Vue.use(Fo
