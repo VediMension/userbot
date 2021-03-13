@@ -17,4 +17,6 @@ Vue.use(Option)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Dialog)
-Vue.use(Bu
+Vue.use(Button)
+Vue.use(Toasted)
+Vue.use(Loa
