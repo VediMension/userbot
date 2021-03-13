@@ -15,4 +15,6 @@ Vue.use(Input)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Form)
-Vue.use(Fo
+Vue.use(FormItem)
+Vue.use(Dialog)
+Vue.use(Bu
