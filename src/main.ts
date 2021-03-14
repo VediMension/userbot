@@ -19,4 +19,7 @@ Vue.use(FormItem)
 Vue.use(Dialog)
 Vue.use(Button)
 Vue.use(Toasted)
-Vue.use(Loa
+Vue.use(Loading)
+
+// 全局绑定公共方法
+Vue
