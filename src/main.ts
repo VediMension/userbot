@@ -22,4 +22,4 @@ Vue.use(Toasted)
 Vue.use(Loading)
 
 // 全局绑定公共方法
-Vue
+Vue.prototype.comparePrice = compa
