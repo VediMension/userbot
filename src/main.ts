@@ -24,4 +24,5 @@ Vue.use(Loading)
 // 全局绑定公共方法
 Vue.prototype.comparePrice = comparePrice
 Vue.prototype.transVolume = transVolume
-Vue.prototype.transDate = transDat
+Vue.prototype.transDate = transDate
+Vue.prototype.transMarketNam
