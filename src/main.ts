@@ -25,4 +25,6 @@ Vue.use(Loading)
 Vue.prototype.comparePrice = comparePrice
 Vue.prototype.transVolume = transVolume
 Vue.prototype.transDate = transDate
-Vue.prototype.transMarketNam
+Vue.prototype.transMarketName = transMarketName
+
+axios.defaults.
