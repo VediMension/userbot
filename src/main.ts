@@ -28,4 +28,6 @@ Vue.prototype.transDate = transDate
 Vue.prototype.transMarketName = transMarketName
 
 axios.defaults.headers.get['Content-Type'] = 'text/plain'
-Vue.config.productionTi
+Vue.config.productionTip = false
+
+/* eslint-disable no-ne
