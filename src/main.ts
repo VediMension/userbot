@@ -27,4 +27,5 @@ Vue.prototype.transVolume = transVolume
 Vue.prototype.transDate = transDate
 Vue.prototype.transMarketName = transMarketName
 
-axios.defaults.headers.get['Content-Type'] = 
+axios.defaults.headers.get['Content-Type'] = 'text/plain'
+Vue.config.productionTi
