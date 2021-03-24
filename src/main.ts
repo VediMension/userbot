@@ -30,4 +30,6 @@ Vue.prototype.transMarketName = transMarketName
 axios.defaults.headers.get['Content-Type'] = 'text/plain'
 Vue.config.productionTip = false
 
-/* eslint-disable no-ne
+/* eslint-disable no-new */
+new Vue({
+  router,
