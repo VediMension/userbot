@@ -11,3 +11,13 @@ export default new Router({
   routes: [
     {
       path: "/",
+      name: "index",
+      component: IndexPage,
+    },
+    {
+      path: "/stock/:code",
+      name: "stock",
+      component: StockPage,
+    },
+  ],
+});
