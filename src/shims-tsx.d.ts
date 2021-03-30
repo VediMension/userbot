@@ -1,4 +1,5 @@
 import Vue, { VNode } from 'vue'
 
 declare global {
-  n
+  namespace JSX {
+    // tslint:disable n
