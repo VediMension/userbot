@@ -1,1 +1,2 @@
-declare mod
+declare module '*.vue' {
+  import Vue fr
