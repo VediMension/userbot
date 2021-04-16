@@ -6,4 +6,5 @@
 const files = require.context('.', false, /\.ts$/)
 const modules: any = {}
 
-files.keys().forEach((
+files.keys().forEach((key: string) => {
+  if (key ==
