@@ -7,4 +7,5 @@ const files = require.context('.', false, /\.ts$/)
 const modules: any = {}
 
 files.keys().forEach((key: string) => {
-  if (key ==
+  if (key === './index.ts') return
+  modul
