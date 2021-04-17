@@ -8,4 +8,4 @@ const modules: any = {}
 
 files.keys().forEach((key: string) => {
   if (key === './index.ts') return
-  modul
+  modules[key.replace(/(\.\/|\.ts)/g, ''
