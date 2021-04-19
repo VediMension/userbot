@@ -11,4 +11,4 @@ files.keys().forEach((key: string) => {
   modules[key.replace(/(\.\/|\.ts)/g, '')] = files(key).default
 })
 
-export default mo
+export default modules
