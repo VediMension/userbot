@@ -8,4 +8,7 @@ const modules: any = {}
 
 files.keys().forEach((key: string) => {
   if (key === './index.ts') return
-  modules[key.replace(/(\.\/|\.ts)/g, ''
+  modules[key.replace(/(\.\/|\.ts)/g, '')] = files(key).default
+})
+
+export default mo
