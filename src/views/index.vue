@@ -50,3 +50,26 @@
       >
         <el-table-column label="股票" width="100">
           <template slot-scope="props">
+            <div class="stock-info">
+              <div :title="props.row.name">
+                <h3>{{ props.row.name }}</h3>
+                <span v-if="props.row.status">
+                  {{ props.row.status === "S" ? "停" : "退" }}
+                </span>
+              </div>
+              <p>{{ props.row.code.toUpperCase() }}</p>
+            </div>
+          </template>
+        </el-table-column>
+        <el-table-column
+          prop="price"
+          label="最新价"
+          align="right"
+          width="75"
+          sortable
+        >
+          <template slot-scope="props">
+            <p class="stock-price">{{ props.row.price.toFixed(2) }}</p>
+          </template>
+        </el-table-column>
+        <el-table-column label="成交量" align="right" width="90">
