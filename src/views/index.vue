@@ -73,3 +73,41 @@
           </template>
         </el-table-column>
         <el-table-column label="成交量" align="right" width="90">
+          <template slot-scope="props">
+            <p class="stock-volume">
+              {{ transVolume(props.row.turnover_amount)
+              }}{{ props.row.code.indexOf("hk") > -1 ? "股" : "手" }}
+            </p>
+          </template>
+        </el-table-column>
+        <el-table-column
+          prop="gain.percent"
+          label="涨跌幅"
+          align="right"
+          sortable
+        >
+          <template slot-scope="props">
+            <template v-if="!props.row.status">
+              <span
+                class="gain-price"
+                :class="comparePrice(props.row.gains, 0)"
+              >
+                {{ props.row.price > 0 ? "+" : ""
+                }}{{ props.row.price.toFixed(2) }}
+              </span>
+              <span
+                class="gain-percent"
+                :class="comparePrice(props.row.gains, 0)"
+              >
+                {{ props.row.gains > 0 ? "+" : ""
+                }}{{ props.row.gains.toFixed(2) }}%
+              </span>
+            </template>
+            <template v-else>
+              <span class="gain-price">-</span>
+              <span class="gain-percent">0.00%</span>
+            </template>
+          </template>
+        </el-table-column>
+      </el-table>
+    </div>
