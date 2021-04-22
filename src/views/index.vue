@@ -111,3 +111,37 @@
         </el-table-column>
       </el-table>
     </div>
+    <!--加自选弹窗-->
+    <optional-dialog ref="optionalDialog" @finish="fetchData" />
+  </div>
+</template>
+
+<script>
+import { timeSpan, stockIndex } from "../libs/constant"; // api,请求间隔,三大指数
+import Sortable from "sortablejs"; // 表格拖拽库
+import OptionalDialog from "../components/optional"; // 添加功能组件
+import apis from "../libs/apis";
+export default {
+  components: {
+    OptionalDialog,
+  },
+  data() {
+    return {
+      indexs: [], // 指数部分
+      optionals: [], // 自选部分
+    };
+  },
+  created() {
+    this.fetchData();
+  },
+  mounted() {
+    setInterval(this.fetchData, timeSpan); // 轮训获取数据
+    this.rowDrop(); // 拖拽功能
+  },
+  methods: {
+    fetchData() {
+      const storage = localStorage.getItem("optionals");
+      let storageOptional = [];
+      if (storage !== "" && storage !== null) {
+        storageOptional = storage.split(",");
+      }
