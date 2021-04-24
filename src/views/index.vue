@@ -145,3 +145,42 @@ export default {
       if (storage !== "" && storage !== null) {
         storageOptional = storage.split(",");
       }
+
+      const stockIDs = stockIndex.concat(storageOptional)
+      apis.listStocks(stockIDs).then(this.resolveData.bind(this))
+    },
+    /**
+     * 解析所有获取的股票数据
+     * @param data {string} - 股票数据字符串
+     */
+    resolveData(data) {
+      const indexs = [];
+      const optionals = [];
+      console.log(data.list);
+      data.list.forEach(stockItem => {
+        let isIndex = false
+        for (const item in stockIndex) {
+          if (stockIndex[item] == stockItem.internal_code) {
+            isIndex = true;
+            break;
+          }
+        }
+        if (isIndex) {
+            indexs.push(stockItem);
+          } else {
+            optionals.push(stockItem);
+          }
+      });
+      this.indexs = indexs;
+      this.optionals = optionals;
+      // this.$set(this, 'indexs', indexs);
+      // this.$set(this, 'optionals', optionals);
+    },
+
+    /**
+     * 弹窗添加自选股
+     */
+    addOptional() {
+      this.$refs["optionalDialog"].show();
+    },
+    /**
