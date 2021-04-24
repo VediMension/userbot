@@ -184,3 +184,44 @@ export default {
       this.$refs["optionalDialog"].show();
     },
     /**
+     * 删除自选
+     * @param code {string} - 个股代码
+     */
+    deleteStock(code) {
+      const storage = localStorage.getItem("optionals");
+      const storageOptional = storage.split(",");
+      const final = [];
+      storageOptional.forEach((item) => {
+        if (item.toLowerCase() !== code.toLowerCase()) {
+          final.push(item);
+        }
+      });
+      localStorage.setItem("optionals", final.join(","));
+      this.fetchData();
+      this.$toasted.show("已删除", {
+        theme: "toasted-primary",
+        position: "bottom-center",
+        duration: 2000,
+      });
+    },
+    /**
+     * 执行修改数据
+     */
+    modifyData() {
+      const modified = this.optionals.map((item) => item.code);
+      localStorage.setItem("optionals", modified.join(","));
+    },
+    /**
+     * 自选股的行拖拽排序功能
+     */
+    rowDrop() {
+      const tbody = document.querySelector(".el-table__body-wrapper tbody");
+      // const that = this
+      Sortable.create(tbody, {
+        animation: 120,
+        onEnd({ newIndex, oldIndex }) {
+          const currRow = this.optionals.splice(oldIndex, 1)[0];
+          this.optionals.splice(newIndex, 0, currRow);
+          this.modifyData();
+        },
+      });
