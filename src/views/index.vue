@@ -225,3 +225,14 @@ export default {
           this.modifyData();
         },
       });
+    },
+    clickRow(rowData) {
+      this.$router.push("/stock/" + rowData.code);
+    },
+  },
+};
+</script>
+
+<style lang="scss">
+@import "../assets/scss/index";
+</style>
