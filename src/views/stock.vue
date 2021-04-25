@@ -18,3 +18,33 @@
             }}{{ stock.gain.price.toFixed(2) }}
           </span>
           <span class="gain-percent">
+            {{ stock.gain.percent > 0 ? "+" : ""
+            }}{{ stock.gain.percent.toFixed(2) }}%
+          </span>
+        </div>
+        <div class="right-part">
+          <span class="current-time">
+            {{ transDate(stock.time) }} (数据获取时间)</span
+          >
+        </div>
+      </div>
+      <!--个股信息-->
+      <el-form label-position="left" inline class="stock-info-form">
+        <el-form-item
+          label="最高:"
+          :class="comparePrice(stock.highest, stock.yesterday)"
+        >
+          <span>{{ stock.highest.toFixed(2) }}</span>
+        </el-form-item>
+        <el-form-item
+          label="今开:"
+          :class="comparePrice(stock.today, stock.yesterday)"
+        >
+          <span>{{ stock.today.toFixed(2) }}</span>
+        </el-form-item>
+        <el-form-item
+          label="涨停:"
+          :class="comparePrice(stock.limit.up, stock.yesterday)"
+        >
+          <span>{{ stock.limit.up.toFixed(2) }}</span>
+        </el-form-item>
