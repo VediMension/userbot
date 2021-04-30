@@ -76,3 +76,38 @@
           <span>{{ stock.cap }}亿</span>
         </el-form-item>
         <el-form-item label="市净率:">
+          <span>{{ stock.ratio }}</span>
+        </el-form-item>
+        <el-form-item label="振幅:">
+          <span>{{ stock.swing.toFixed(2) }}%</span>
+        </el-form-item>
+        <el-form-item label="流通值:">
+          <span>{{ stock.float }}亿</span>
+        </el-form-item>
+      </el-form>
+      <!--K线图/买卖/成交-->
+      <div class="k-line">
+        <div class="order-list">
+          <p class="inner-title">五档盘口</p>
+          <!--卖手-->
+          <ul class="sell-order">
+            <li v-for="(item, index) in reverseSell" v-bind:key="index">
+              <span class="order-index"
+                >卖{{ reverseSell.length - index }}</span
+              >
+              <span
+                class="order-price"
+                :class="comparePrice(item.price, stock.yesterday)"
+                >{{ item.price.toFixed(2) }}</span
+              >
+              <span class="order-count">{{ transVolume(item.count) }}</span>
+            </li>
+          </ul>
+          <!--买手-->
+          <ul class="buy-order">
+            <li v-for="(item, index) in stock.buy" v-bind:key="index">
+              <span class="order-index">买{{ index + 1 }}</span>
+              <span
+                class="order-price"
+                :class="comparePrice(item.price, stock.yesterday)"
+                >{{ item.price.toFixed(2) }}</span
