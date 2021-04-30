@@ -111,3 +111,38 @@
                 class="order-price"
                 :class="comparePrice(item.price, stock.yesterday)"
                 >{{ item.price.toFixed(2) }}</span
+              >
+              <span class="order-count">{{ transVolume(item.count) }}</span>
+            </li>
+          </ul>
+          <p class="inner-title">成交明细</p>
+          <!--实时成交-->
+          <ul
+            class="deal-detail"
+            v-if="this.stockIndex.indexOf(this.code) === -1"
+          >
+            <li v-for="(item, index) in reverseDeal" v-bind:key="index">
+              <span class="deal-time">{{ item.time }}</span>
+              <span
+                class="deal-price"
+                :class="comparePrice(item.price, stock.yesterday)"
+                >{{ item.price.toFixed(2) }}</span
+              >
+              <span
+                class="deal-count"
+                :class="{
+                  'deal-buy': item.type === 'B',
+                  'deal-sell': item.type === 'S',
+                }"
+                >{{ transVolume(item.count) }}</span
+              >
+            </li>
+          </ul>
+        </div>
+        <!--K线图-->
+        <div class="line-picture">
+          <img :src="kline" draggable="false" />
+        </div>
+      </div>
+    </div>
+  </div>
