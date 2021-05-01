@@ -146,3 +146,37 @@
       </div>
     </div>
   </div>
+</template>
+
+<script>
+import Axios from "axios";
+import { apiUrl, timeSpan, stockIndex } from "../libs/constant"; // api,请求间隔,三大指数
+export default {
+  data() {
+    return {
+      stock: {
+        current: 0,
+        sell: [],
+        deal: [],
+        today: 0,
+        yesterday: 0,
+        highest: 0,
+        lowest: 0,
+        turnover: 0,
+        swing: 0,
+        gain: {
+          price: 0,
+          percent: 0,
+        },
+        limit: {
+          up: 0,
+          down: 0,
+        },
+        volume: {
+          total: 0, // 成交量
+          turn: 0, // 成交额
+        },
+        time: ""
+      }, // 个股详情
+      kline: null, // k线图
+      interval: null, // 轮询
