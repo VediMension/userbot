@@ -180,3 +180,31 @@ export default {
       }, // 个股详情
       kline: null, // k线图
       interval: null, // 轮询
+      loading: null, // 弹窗
+      stockIndex: stockIndex,
+    };
+  },
+  mounted() {
+    this.fetchData(); // 第一次进来获取数据
+    clearInterval(this.interval); // 先清除前面的轮询
+    this.interval = setInterval(this.fetchData, timeSpan); // 再开始新的轮询获取数据
+  },
+  methods: {
+    /**
+     * 获取数据
+     */
+    fetchData() {
+      let times = 0; // 请求成功次数
+      // 获取个股详细信息
+      Axios.get(apiUrl, {
+        params: { q: this.code },
+      }).then((res) => {
+        const item = res.data.split('"')[1].split("~");
+        let deal = [];
+        if (item[29] != "") {
+          deal = item[29].split("|");
+        }
+        this.stock = {
+          name: item[1], // 名称
+          code: item[2], // 代码
+          current: parseFloat(item[3]), // 当前价
