@@ -208,3 +208,43 @@ export default {
           name: item[1], // 名称
           code: item[2], // 代码
           current: parseFloat(item[3]), // 当前价
+          yesterday: parseFloat(item[4]), // 昨收
+          today: parseFloat(item[5]), // 今开
+          volume: {
+            total: item[6], // 成交量
+            turn: item[37], // 成交额
+          },
+          out: item[7], // 外盘
+          in: item[8], // 内盘
+          time: item[30], // 时间
+          gain: {
+            price: parseFloat(item[31]), // 涨跌
+            percent: parseFloat(item[32]), // 涨跌%
+          },
+          buy: [
+            {
+              price: parseFloat(item[9]),
+              count: item[10],
+            },
+            {
+              price: parseFloat(item[11]),
+              count: item[12],
+            },
+            {
+              price: parseFloat(item[13]),
+              count: item[14],
+            },
+            {
+              price: parseFloat(item[15]),
+              count: item[16],
+            },
+            {
+              price: parseFloat(item[17]),
+              count: item[18],
+            },
+          ], // 买1-5
+          sell: [
+            {
+              price: parseFloat(item[19]),
+              count: item[20],
+            },
