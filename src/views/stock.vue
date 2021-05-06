@@ -272,3 +272,30 @@ export default {
               time: per[0].substring(0, 5),
               price: parseFloat(per[1]),
               count: per[2],
+              type: per[3],
+            };
+          }),
+          highest: parseFloat(item[33]), // 最高
+          lowest: parseFloat(item[34]), // 最低
+          turnover: parseFloat(item[38]), // 换手率
+          swing: parseFloat(item[43]), // 振幅
+          float: item[44], // 流通市值
+          cap: item[45], // 总市值
+          ratio: item[46], // 市净率
+          limit: {
+            up: parseFloat(item[47]), // 涨停
+            down: parseFloat(item[48]), // 跌停
+          },
+        };
+        times++;
+        this.checkLoadFinish(times);
+      });
+      // 获取K线图
+      Axios.get(`http://imgnode.gtimg.cn/hq_img`, {
+        params: {
+          code: this.code,
+          type: "minute",
+          size: 1,
+        },
+        responseType: "arraybuffer",
+      }).then((res) => {
