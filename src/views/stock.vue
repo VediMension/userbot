@@ -248,3 +248,27 @@ export default {
               price: parseFloat(item[19]),
               count: item[20],
             },
+            {
+              price: parseFloat(item[21]),
+              count: item[22],
+            },
+            {
+              price: parseFloat(item[23]),
+              count: item[24],
+            },
+            {
+              price: parseFloat(item[25]),
+              count: item[26],
+            },
+            {
+              price: parseFloat(item[27]),
+              count: item[28],
+            },
+          ], // 卖1-5
+          deal: deal.map((detail) => {
+            console.log(detail);
+            const per = detail.split("/");
+            return {
+              time: per[0].substring(0, 5),
+              price: parseFloat(per[1]),
+              count: per[2],
