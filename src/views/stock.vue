@@ -299,3 +299,40 @@ export default {
         },
         responseType: "arraybuffer",
       }).then((res) => {
+        const result =
+          "data:image/png;base64," +
+          btoa(
+            new Uint8Array(res.data).reduce(
+              (data, byte) => data + String.fromCharCode(byte),
+              ""
+            )
+          );
+        this.kline = result;
+        times++;
+        this.checkLoadFinish(times);
+      });
+    },
+    /**
+     * 检查请求次数，关闭弹窗
+     * @param times {number} - 请求完成次数
+     */
+    checkLoadFinish(times) {
+      if (times === 2 && this.loading !== null) {
+        this.loading.close();
+      }
+    },
+  },
+  computed: {
+    // 获取当前页面个股代码
+    code() {
+      return this.$route.params.code;
+    },
+    // 倒序卖手
+    reverseSell() {
+      const sell = this.stock.sell
+      return sell.reverse();
+    },
+    // 倒序实时成交
+    reverseDeal() {
+      const deal = this.stock.deal
+      return deal.reverse();
