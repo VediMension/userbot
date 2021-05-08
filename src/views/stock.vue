@@ -336,3 +336,14 @@ export default {
     reverseDeal() {
       const deal = this.stock.deal
       return deal.reverse();
+    },
+  },
+  watch: {
+    
+  },
+};
+</script>
+
+<style lang="scss">
+@import "../assets/scss/stock";
+</style>
