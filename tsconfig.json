@@ -5,4 +5,4 @@
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
-   
+    "moduleResolution": "
