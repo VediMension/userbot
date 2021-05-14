@@ -6,4 +6,5 @@
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
-    "experimentalDec
+    "experimentalDecorators": true,
+    "skipLibCheck": tru
