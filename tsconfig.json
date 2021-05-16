@@ -9,4 +9,4 @@
     "experimentalDecorators": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-  
+    "allowSyntheticDefaultImports": tru
