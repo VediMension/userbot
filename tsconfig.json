@@ -22,4 +22,6 @@
     },
     "lib": [
       "esnext",
-      "d
+      "dom",
+      "dom.iterable",
+      "scri
