@@ -27,4 +27,6 @@
       "scripthost"
     ]
   },
-  "inc
+  "include": [
+    "src/**/*.ts",
+    "src/**
