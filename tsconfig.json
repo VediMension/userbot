@@ -24,4 +24,7 @@
       "esnext",
       "dom",
       "dom.iterable",
-      "scri
+      "scripthost"
+    ]
+  },
+  "inc
