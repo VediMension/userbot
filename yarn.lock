@@ -457,3 +457,37 @@
   resolved "https://registry.npm.taobao.org/@babel/plugin-proposal-unicode-property-regex/download/@babel/plugin-proposal-unicode-property-regex-7.12.1.tgz?cache=0&sync_timestamp=1602802514976&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-proposal-unicode-property-regex%2Fdownload%2F%40babel%2Fplugin-proposal-unicode-property-regex-7.12.1.tgz#2a183958d417765b9eae334f47758e5d6a82e072"
   integrity sha1-Khg5WNQXdluerjNPR3WOXWqC4HI=
   dependencies:
+    "@babel/helper-create-regexp-features-plugin" "^7.12.1"
+    "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-syntax-async-generators@^7.8.0":
+  version "7.8.4"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-async-generators/download/@babel/plugin-syntax-async-generators-7.8.4.tgz#a983fb1aeb2ec3f6ed042a210f640e90e786fe0d"
+  integrity sha1-qYP7Gusuw/btBCohD2QOkOeG/g0=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.0"
+
+"@babel/plugin-syntax-class-properties@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-class-properties/download/@babel/plugin-syntax-class-properties-7.12.1.tgz?cache=0&sync_timestamp=1602802624701&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-syntax-class-properties%2Fdownload%2F%40babel%2Fplugin-syntax-class-properties-7.12.1.tgz#bcb297c5366e79bebadef509549cd93b04f19978"
+  integrity sha1-vLKXxTZueb663vUJVJzZOwTxmXg=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-syntax-decorators@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-decorators/download/@babel/plugin-syntax-decorators-7.12.1.tgz?cache=0&sync_timestamp=1602802624858&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-syntax-decorators%2Fdownload%2F%40babel%2Fplugin-syntax-decorators-7.12.1.tgz#81a8b535b284476c41be6de06853a8802b98c5dd"
+  integrity sha1-gai1NbKER2xBvm3gaFOogCuYxd0=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-syntax-dynamic-import@^7.8.0", "@babel/plugin-syntax-dynamic-import@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-dynamic-import/download/@babel/plugin-syntax-dynamic-import-7.8.3.tgz?cache=0&sync_timestamp=1599827954750&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-syntax-dynamic-import%2Fdownload%2F%40babel%2Fplugin-syntax-dynamic-import-7.8.3.tgz#62bf98b2da3cd21d626154fc96ee5b3cb68eacb3"
+  integrity sha1-Yr+Ysto80h1iYVT8lu5bPLaOrLM=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.8.0"
+
+"@babel/plugin-syntax-export-namespace-from@^7.8.3":
+  version "7.8.3"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-syntax-export-namespace-from/download/@babel/plugin-syntax-export-namespace-from-7.8.3.tgz#028964a9ba80dbc094c915c487ad7c4e7a66465a"
