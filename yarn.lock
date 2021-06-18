@@ -639,3 +639,31 @@
     "@babel/helper-plugin-utils" "^7.10.4"
 
 "@babel/plugin-transform-duplicate-keys@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-transform-duplicate-keys/download/@babel/plugin-transform-duplicate-keys-7.12.1.tgz?cache=0&sync_timestamp=1602802628850&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-transform-duplicate-keys%2Fdownload%2F%40babel%2Fplugin-transform-duplicate-keys-7.12.1.tgz#745661baba295ac06e686822797a69fbaa2ca228"
+  integrity sha1-dFZhuropWsBuaGgieXpp+6osoig=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-transform-exponentiation-operator@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-transform-exponentiation-operator/download/@babel/plugin-transform-exponentiation-operator-7.12.1.tgz?cache=0&sync_timestamp=1602802628995&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-transform-exponentiation-operator%2Fdownload%2F%40babel%2Fplugin-transform-exponentiation-operator-7.12.1.tgz#b0f2ed356ba1be1428ecaf128ff8a24f02830ae0"
+  integrity sha1-sPLtNWuhvhQo7K8Sj/iiTwKDCuA=
+  dependencies:
+    "@babel/helper-builder-binary-assignment-operator-visitor" "^7.10.4"
+    "@babel/helper-plugin-utils" "^7.10.4"
+
+"@babel/plugin-transform-flow-strip-types@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.12.1.tgz#8430decfa7eb2aea5414ed4a3fa6e1652b7d77c4"
+  integrity sha512-8hAtkmsQb36yMmEtk2JZ9JnVyDSnDOdlB+0nEGzIDLuK4yR3JcEjfuFPYkdEPSh8Id+rAMeBEn+X0iVEyho6Hg==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/plugin-syntax-flow" "^7.12.1"
+
+"@babel/plugin-transform-for-of@^7.12.1":
+  version "7.12.1"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-transform-for-of/download/@babel/plugin-transform-for-of-7.12.1.tgz#07640f28867ed16f9511c99c888291f560921cfa"
+  integrity sha1-B2QPKIZ+0W+VEcmciIKR9WCSHPo=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
