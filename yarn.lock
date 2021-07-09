@@ -1226,3 +1226,29 @@
 "@oclif/plugin-not-found@1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-1.2.4.tgz#160108c82f0aa10f4fb52cee4e0135af34b7220b"
+  integrity sha512-G440PCuMi/OT8b71aWkR+kCWikngGtyRjOR24sPMDbpUFV4+B3r51fz1fcqeUiiEOYqUpr0Uy/sneUe1O/NfBg==
+  dependencies:
+    "@oclif/color" "^0.x"
+    "@oclif/command" "^1.6.0"
+    cli-ux "^4.9.0"
+    fast-levenshtein "^2.0.6"
+    lodash "^4.17.13"
+
+"@oclif/plugin-plugins@1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-1.9.1.tgz#0a5db4281bb89ac8eaff7b134463a1531de809d0"
+  integrity sha512-/lE644CeLZ9ZNpDzHTKSadUtHjo86CbKZBazJiBEeH3LAzf90AeiX447slVByGIAHOglvPgWLKaTUGuWdF/iwQ==
+  dependencies:
+    "@oclif/color" "^0.x"
+    "@oclif/command" "^1.5.12"
+    "@oclif/errors" "^1.2.2"
+    chalk "^2.4.2"
+    cli-ux "^5.2.1"
+    debug "^4.1.0"
+    fs-extra "^9.0.1"
+    http-call "^5.2.2"
+    load-json-file "^5.2.0"
+    npm-run-path "^4.0.1"
+    semver "^7.3.2"
+    tslib "^2.0.0"
+    yarn "^1.21.1"
