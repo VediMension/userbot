@@ -2040,3 +2040,31 @@
   dependencies:
     "@hapi/joi" "^15.0.1"
     chalk "^2.4.2"
+    execa "^1.0.0"
+    launch-editor "^2.2.1"
+    lru-cache "^5.1.1"
+    node-ipc "^9.1.1"
+    open "^6.3.0"
+    ora "^3.4.0"
+    read-pkg "^5.1.1"
+    request "^2.88.2"
+    semver "^6.1.0"
+    strip-ansi "^6.0.0"
+
+"@vue/cli-ui-addon-webpack@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-4.5.9.tgz#f7f8c93c2745df11587a08876b1f14cedf3c3bd7"
+  integrity sha512-fh79OvbqvZ2YQ7JI7DnDKeS3W72HoEMVS8m969g/kjrqkFM+Rt2cL81LBx3IgX5l/rZP999kof569vYsOyjVnA==
+
+"@vue/cli-ui-addon-widgets@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-4.5.9.tgz#3d57198500406ed10968ed877557e2118dca6d6d"
+  integrity sha512-mFdUlfDGxoyreCQWO/SX4DvM/6epn37AimVGzLJLpSPJdWUerCnvxwzB6zL83SiYC6O6++cWEdzgz7EtKViFlA==
+
+"@vue/cli-ui@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-4.5.9.tgz#2a8c79d379e53d84df5f57703978cf520a51f81d"
+  integrity sha512-JXQk29CLp7eBdO6uCr2s60xBoKjXPzr9ckpCicFMIWFLQOR0+DqWQpS1DIqETbgOmTYQj1LX+v1rkLeA74Lo2A==
+  dependencies:
+    "@akryum/winattr" "^3.0.0"
+    "@vue/cli-shared-utils" "^4.5.9"
