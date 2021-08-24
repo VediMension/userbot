@@ -2642,3 +2642,30 @@ apollo-client@^2.6.4:
     zen-observable "^0.8.0"
 
 apollo-codegen-core@^0.38.1:
+  version "0.38.1"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-core/-/apollo-codegen-core-0.38.1.tgz#af964346b91b4824ec947938dc283c657eea0b79"
+  integrity sha512-LOeLQdSeKnHJBYxjhrJ/4b8RR9V4f9QhUAB/wYyJ7g8eCT4ZcjdGdwQ/KnijI0GmrWaz+t4Z5zn3wpXaudn7bA==
+  dependencies:
+    "@babel/generator" "7.12.1"
+    "@babel/parser" "^7.1.3"
+    "@babel/types" "7.10.4"
+    apollo-env "^0.6.5"
+    apollo-language-server "^1.24.1"
+    ast-types "^0.14.0"
+    common-tags "^1.5.1"
+    recast "^0.20.0"
+
+apollo-codegen-flow@^0.36.1:
+  version "0.36.1"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-flow/-/apollo-codegen-flow-0.36.1.tgz#fc7848924063ad4b07d335990cb698f7ef7a1f44"
+  integrity sha512-+986zLn9gA44fKF+7iKrPrtSN0cCtlgXeqBHZFujcyGaWWzra8+/lj23L+toFCT+FI93KYGZLqslrlwoMbcD3g==
+  dependencies:
+    "@babel/generator" "7.12.1"
+    "@babel/types" "7.10.4"
+    apollo-codegen-core "^0.38.1"
+    change-case "^4.0.0"
+    common-tags "^1.5.1"
+    inflected "^2.0.3"
+
+apollo-codegen-scala@^0.37.1:
+  version "0.37.1"
