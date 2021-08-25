@@ -2669,3 +2669,31 @@ apollo-codegen-flow@^0.36.1:
 
 apollo-codegen-scala@^0.37.1:
   version "0.37.1"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-scala/-/apollo-codegen-scala-0.37.1.tgz#55cc6ed2a5e3cf3c73abb9e43868619d8cf131e3"
+  integrity sha512-+pSDQ4MbGZNbQ1VgfHK0P+w+iDoIHDQ2Bq7WhjX8ZayKTpLb/X9eWYMzrfQRtr0uDrXbbPkM0YGj1kcdGehINw==
+  dependencies:
+    apollo-codegen-core "^0.38.1"
+    change-case "^4.0.0"
+    common-tags "^1.5.1"
+    inflected "^2.0.3"
+
+apollo-codegen-swift@^0.38.1:
+  version "0.38.1"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-swift/-/apollo-codegen-swift-0.38.1.tgz#2c243484c43f95742b5b3b99cd2de1433b46914c"
+  integrity sha512-VJROl4GQzDJn8EnFX6IEP/G1KMeHZblD/Mrbweza+3Kel4wH6SpD533Jc/W4pd4pxdzbhbmfXkJSzkL/xPIvbg==
+  dependencies:
+    apollo-codegen-core "^0.38.1"
+    change-case "^4.0.0"
+    common-tags "^1.5.1"
+    inflected "^2.0.3"
+
+apollo-codegen-typescript@^0.38.1:
+  version "0.38.1"
+  resolved "https://registry.yarnpkg.com/apollo-codegen-typescript/-/apollo-codegen-typescript-0.38.1.tgz#1e7163de8ea4a6a1771b97936134258f0c90ae65"
+  integrity sha512-UAHh1HliM8ahraF7csRYrbhrYhDcgqlE0PEu1WwqFISE1r7wRtLZXg+ic25iyRpTIZqkB8mfkym20Z5nZgmNbw==
+  dependencies:
+    "@babel/generator" "7.12.1"
+    "@babel/types" "7.10.4"
+    apollo-codegen-core "^0.38.1"
+    change-case "^4.0.0"
+    common-tags "^1.5.1"
