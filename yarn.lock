@@ -3777,3 +3777,33 @@ camel-case@^4.1.1:
   dependencies:
     pascal-case "^3.1.1"
     tslib "^1.10.0"
+
+camelcase@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
+  integrity sha1-1UVjW+HjPFQmScaRc+Xeas+uNN0=
+
+camelcase@^5.0.0, camelcase@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.npm.taobao.org/camelcase/download/camelcase-5.3.1.tgz?cache=0&sync_timestamp=1602349860948&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcamelcase%2Fdownload%2Fcamelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
+  integrity sha1-48mzFWnhBoEd8kL3FXJaH0xJQyA=
+
+camelcase@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.npm.taobao.org/camelcase/download/camelcase-6.1.0.tgz?cache=0&sync_timestamp=1602349860948&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcamelcase%2Fdownload%2Fcamelcase-6.1.0.tgz#27dc176173725fb0adf8a48b647f4d7871944d78"
+  integrity sha1-J9wXYXNyX7Ct+KSLZH9NeHGUTXg=
+
+caniuse-api@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/caniuse-api/download/caniuse-api-3.0.0.tgz#5e4d90e2274961d46291997df599e3ed008ee4c0"
+  integrity sha1-Xk2Q4idJYdRikZl99Znj7QCO5MA=
+  dependencies:
+    browserslist "^4.0.0"
+    caniuse-lite "^1.0.0"
+    lodash.memoize "^4.1.2"
+    lodash.uniq "^4.5.0"
+
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001135:
+  version "1.0.30001151"
+  resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001151.tgz#1ddfde5e6fff02aad7940b4edb7d3ac76b0cb00b"
+  integrity sha1-Hd/eXm//AqrXlAtO2306x2sMsAs=
