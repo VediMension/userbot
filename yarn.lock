@@ -7787,3 +7787,41 @@ java-properties@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
+
+javascript-stringify@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
+  integrity sha1-FC0RHzpuPa6PSpr9d9RYVbWpzOM=
+
+javascript-stringify@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/javascript-stringify/download/javascript-stringify-2.0.1.tgz#6ef358035310e35d667c675ed63d3eb7c1aa19e5"
+  integrity sha1-bvNYA1MQ411mfGde1j0+t8GqGeU=
+
+jest-worker@^25.4.0:
+  version "25.5.0"
+  resolved "https://registry.npm.taobao.org/jest-worker/download/jest-worker-25.5.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-worker%2Fdownload%2Fjest-worker-25.5.0.tgz#2611d071b79cea0f43ee57a3d118593ac1547db1"
+  integrity sha1-JhHQcbec6g9D7lej0RhZOsFUfbE=
+  dependencies:
+    merge-stream "^2.0.0"
+    supports-color "^7.0.0"
+
+jest-worker@^26.6.1:
+  version "26.6.2"
+  resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-26.6.2.tgz#7f72cbc4d643c365e27b9fd775f9d0eaa9c7a8ed"
+  integrity sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==
+  dependencies:
+    "@types/node" "*"
+    merge-stream "^2.0.0"
+    supports-color "^7.0.0"
+
+js-message@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/js-message/download/js-message-1.0.5.tgz#2300d24b1af08e89dd095bc1a4c9c9cfcb892d15"
+  integrity sha1-IwDSSxrwjondCVvBpMnJz8uJLRU=
+
+js-queue@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/js-queue/download/js-queue-2.0.0.tgz#362213cf860f468f0125fc6c96abc1742531f948"
+  integrity sha1-NiITz4YPRo8BJfxslqvBdCUx+Ug=
+  dependencies:
