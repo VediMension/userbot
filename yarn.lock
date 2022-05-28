@@ -7924,3 +7924,40 @@ json3@^3.3.2:
   version "3.3.3"
   resolved "https://registry.npm.taobao.org/json3/download/json3-3.3.3.tgz#7fc10e375fc5ae42c4705a5cc0aa6f62be305b81"
   integrity sha1-f8EON1/FrkLEcFpcwKpvYr4wW4E=
+
+json5@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/json5/download/json5-0.5.1.tgz#1eade7acc012034ad84e2396767ead9fa5495821"
+  integrity sha1-Hq3nrMASA0rYTiOWdn6tn6VJWCE=
+
+json5@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/json5/download/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  integrity sha1-d5+wAYYE+oVOrL9iUhgNg1Q+Pb4=
+  dependencies:
+    minimist "^1.2.0"
+
+json5@^2.1.2:
+  version "2.1.3"
+  resolved "https://registry.npm.taobao.org/json5/download/json5-2.1.3.tgz#c9b0f7fa9233bfe5807fe66fcf3a5617ed597d43"
+  integrity sha1-ybD3+pIzv+WAf+ZvzzpWF+1ZfUM=
+  dependencies:
+    minimist "^1.2.5"
+
+jsonfile@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
+  integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
+jsonfile@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npm.taobao.org/jsonfile/download/jsonfile-6.0.1.tgz#98966cba214378c8c84b82e085907b40bf614179"
+  integrity sha1-mJZsuiFDeMjIS4LghZB7QL9hQXk=
+  dependencies:
+    universalify "^1.0.0"
+  optionalDependencies:
+    graceful-fs "^4.1.6"
+
+jsprim@^1.2.2:
