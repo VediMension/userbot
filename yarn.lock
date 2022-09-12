@@ -9688,3 +9688,29 @@ postcss-loader@^3.0.0:
     loader-utils "^1.1.0"
     postcss "^7.0.0"
     postcss-load-config "^2.0.0"
+    schema-utils "^1.0.0"
+
+postcss-merge-longhand@^4.0.11:
+  version "4.0.11"
+  resolved "https://registry.npm.taobao.org/postcss-merge-longhand/download/postcss-merge-longhand-4.0.11.tgz?cache=0&sync_timestamp=1603212783596&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-merge-longhand%2Fdownload%2Fpostcss-merge-longhand-4.0.11.tgz#62f49a13e4a0ee04e7b98f42bb16062ca2549e24"
+  integrity sha1-YvSaE+Sg7gTnuY9CuxYGLKJUniQ=
+  dependencies:
+    css-color-names "0.0.4"
+    postcss "^7.0.0"
+    postcss-value-parser "^3.0.0"
+    stylehacks "^4.0.0"
+
+postcss-merge-rules@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.npm.taobao.org/postcss-merge-rules/download/postcss-merge-rules-4.0.3.tgz?cache=0&sync_timestamp=1603212783716&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-merge-rules%2Fdownload%2Fpostcss-merge-rules-4.0.3.tgz#362bea4ff5a1f98e4075a713c6cb25aefef9a650"
+  integrity sha1-NivqT/Wh+Y5AdacTxsslrv75plA=
+  dependencies:
+    browserslist "^4.0.0"
+    caniuse-api "^3.0.0"
+    cssnano-util-same-parent "^4.0.0"
+    postcss "^7.0.0"
+    postcss-selector-parser "^3.0.0"
+    vendors "^1.0.0"
+
+postcss-minify-font-values@^4.0.2:
+  version "4.0.2"
