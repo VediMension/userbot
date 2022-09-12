@@ -9940,3 +9940,31 @@ postcss-svgo@^4.0.2:
     svgo "^1.0.0"
 
 postcss-unique-selectors@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npm.taobao.org/postcss-unique-selectors/download/postcss-unique-selectors-4.0.1.tgz?cache=0&sync_timestamp=1603212785761&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss-unique-selectors%2Fdownload%2Fpostcss-unique-selectors-4.0.1.tgz#9446911f3289bfd64c6d680f073c03b1f9ee4bac"
+  integrity sha1-lEaRHzKJv9ZMbWgPBzwDsfnuS6w=
+  dependencies:
+    alphanum-sort "^1.0.0"
+    postcss "^7.0.0"
+    uniqs "^2.0.0"
+
+postcss-value-parser@^3.0.0:
+  version "3.3.1"
+  resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
+  integrity sha1-n/giVH4okyE88cMO+lGsX9G6goE=
+
+postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
+  integrity sha1-RD9qIM7WSBor2k+oUypuVdeJoss=
+
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.5, postcss@^7.0.6:
+  version "7.0.35"
+  resolved "https://registry.npm.taobao.org/postcss/download/postcss-7.0.35.tgz?cache=0&sync_timestamp=1603497835039&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-7.0.35.tgz#d2be00b998f7f211d8a276974079f2e92b970e24"
+  integrity sha1-0r4AuZj38hHYonaXQHny6SuXDiQ=
+  dependencies:
+    chalk "^2.4.2"
+    source-map "^0.6.1"
+    supports-color "^6.1.0"
+
+prelude-ls@~1.1.2:
