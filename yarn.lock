@@ -10161,3 +10161,32 @@ query-string@^5.0.1:
   integrity sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
   dependencies:
     decode-uri-component "^0.2.0"
+    object-assign "^4.1.0"
+    strict-uri-encode "^1.0.0"
+
+querystring-es3@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.npm.taobao.org/querystring-es3/download/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
+  integrity sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=
+
+querystring@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/querystring/download/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+  integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+
+querystringify@^2.1.1:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/querystringify/download/querystringify-2.2.0.tgz#3345941b4153cb9d082d8eee4cda2016a9aef7f6"
+  integrity sha1-M0WUG0FTy50ILY7uTNogFqmu9/Y=
+
+randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5, randombytes@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/randombytes/download/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
+  integrity sha1-32+ENy8CcNxlzfYpE0mrekc9Tyo=
+  dependencies:
+    safe-buffer "^5.1.0"
+
+randomfill@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/randomfill/download/randomfill-1.0.4.tgz#c92196fc86ab42be983f1bf31778224931d61458"
+  integrity sha1-ySGW/IarQr6YPxvzF3giSTHWFFg=
