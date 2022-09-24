@@ -10360,3 +10360,35 @@ regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npm.taobao.org/regexpp/download/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
   integrity sha1-jRnTHPYySCtYkEn4KB+T28uk0H8=
+
+regexpp@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/regexpp/download/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
+  integrity sha1-IG0K0KVkjP+9uK5GQ489xRyfeOI=
+
+regexpu-core@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.npm.taobao.org/regexpu-core/download/regexpu-core-4.7.1.tgz?cache=0&sync_timestamp=1600413501417&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregexpu-core%2Fdownload%2Fregexpu-core-4.7.1.tgz#2dea5a9a07233298fbf0db91fa9abc4c6e0f8ad6"
+  integrity sha1-LepamgcjMpj78NuR+pq8TG4PitY=
+  dependencies:
+    regenerate "^1.4.0"
+    regenerate-unicode-properties "^8.2.0"
+    regjsgen "^0.5.1"
+    regjsparser "^0.6.4"
+    unicode-match-property-ecmascript "^1.0.4"
+    unicode-match-property-value-ecmascript "^1.2.0"
+
+registry-auth-token@^3.0.1:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-3.4.0.tgz#d7446815433f5d5ed6431cd5dca21048f66b397e"
+  integrity sha512-4LM6Fw8eBQdwMYcES4yTnn2TqIasbXuwDx3um+QRs7S55aMKCBKBxvPXl2RiUjHwuJLTyYfxSpmfSAjQpcuP+A==
+  dependencies:
+    rc "^1.1.6"
+    safe-buffer "^5.0.1"
+
+registry-url@^3.0.3:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/registry-url/-/registry-url-3.1.0.tgz#3d4ef870f73dde1d77f0cf9a381432444e174942"
+  integrity sha1-PU74cPc93h138M+aOBQyRE4XSUI=
+  dependencies:
+    rc "^1.0.1"
