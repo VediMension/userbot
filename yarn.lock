@@ -11537,3 +11537,29 @@ tapable@^2.0.0:
 tar-stream@^1.5.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/tar-stream/-/tar-stream-1.6.2.tgz#8ea55dab37972253d9a9af90fdcd559ae435c555"
+  integrity sha512-rzS0heiNf8Xn7/mpdSVVSMAWAoy9bfb1WOTYC78Z0UQKeKa/CWS8FOq0lKGNa8DWKAn9gxjCvMLYc5PGXYlK2A==
+  dependencies:
+    bl "^1.0.0"
+    buffer-alloc "^1.2.0"
+    end-of-stream "^1.0.0"
+    fs-constants "^1.0.0"
+    readable-stream "^2.3.0"
+    to-buffer "^1.1.1"
+    xtend "^4.0.0"
+
+taskkill@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/taskkill/-/taskkill-3.1.0.tgz#28001339feb23bfae3f447902c4b4abcdd057680"
+  integrity sha512-5KcOFzPvd1nGFVrmB7H4+QAWVjYOf//+QTbOj0GpXbqtqbKGWVczG+rq6VhXAtdtlKLTs16NAmHRyF5vbggQ2w==
+  dependencies:
+    arrify "^2.0.1"
+    execa "^3.3.0"
+
+tasklist@^3.1.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/tasklist/-/tasklist-3.1.1.tgz#84cb49f8359b9ed0451dd1d9b6111da18107dbd5"
+  integrity sha512-G3I7QWUBSNWaekrJcDabydF6dcvy+vZ2PrX04JYq1p914TOLgpN+ryMtheGavs1LYVevTbTmwjQY8aeX8yLsyA==
+  dependencies:
+    neat-csv "^2.1.0"
+    pify "^2.2.0"
+    sec "^1.0.0"
