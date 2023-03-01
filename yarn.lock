@@ -12361,3 +12361,39 @@ vue-cli-plugin-apollo@^0.21.3:
 
 vue-codemod@^0.0.4:
   version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue-codemod/-/vue-codemod-0.0.4.tgz#ebb23675e8f35dabaad028e1fe2dd4b5eb776c75"
+  integrity sha512-mAI9g4CcY3GJOOt/fTOC8Cz9lYtBEuSiDizQHgvcX0HpoKw1bNZBPaNUqFoNxnk6+nGZVgt0/CXYnq80rRK9vg==
+  dependencies:
+    "@babel/core" "^7.10.3"
+    "@babel/preset-env" "^7.10.3"
+    "@types/jscodeshift" "^0.7.1"
+    "@vue/compiler-sfc" "^3.0.0-beta.15"
+    debug "^4.1.1"
+    globby "^10.0.2"
+    inquirer "^7.0.3"
+    jscodeshift "^0.10.0"
+    vue "^3.0.0-beta.15"
+    yargs "^15.3.1"
+
+vue-echarts@^5.0.0-beta.0:
+  version "5.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/vue-echarts/-/vue-echarts-5.0.0-beta.0.tgz#438dd4b0fc5ccea281709c1f7c6321b05352bdf4"
+  integrity sha512-QZFKGXDAYFQo+F20REpzcdLx79nsl4kOorJRpN+08aYq4YiIlmtWss1Lxadm7Fo+NYyWm8nnT+h4xHv3uqWIDQ==
+  dependencies:
+    core-js "^3.4.4"
+    lodash "^4.17.15"
+    resize-detector "^0.1.10"
+
+vue-eslint-parser@^7.0.0:
+  version "7.1.1"
+  resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-7.1.1.tgz?cache=0&sync_timestamp=1602499032728&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.1.1.tgz#c43c1c715ff50778b9a7e9a4e16921185f3425d3"
+  integrity sha1-xDwccV/1B3i5p+mk4WkhGF80JdM=
+  dependencies:
+    debug "^4.1.1"
+    eslint-scope "^5.0.0"
+    eslint-visitor-keys "^1.1.0"
+    espree "^6.2.1"
+    esquery "^1.0.1"
+    lodash "^4.17.15"
+
+vue-hot-reload-api@^2.3.0:
